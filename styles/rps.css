@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(25, 25, 25);
+    color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.move-button{
+    background-color: transparent;
+    border: 3px solid aliceblue;
+    padding: 30px;
+    border-radius: 70px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.move-icon{
+    height: 70px;
+}
+.pyresult{
+    font-size: 30px;
+    font-weight: bolder;
+}
+.reset-btn{
+    background-color: green;
+    color: aliceblue;
+    border: none;
+    font-size: large;
+    padding: 10px;
+    margin: 5px 10px;
+}

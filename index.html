@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body style="font-family: Arial, Helvetica, sans-serif">
+    <a href="rps.html" style="color: rgb(25, 25, 25)"
+      >Rock🗿 Paper🧻 Scissors✂️</a
+    >
+    <hr />
+
+    <p>YouTube Subscribe button</p>
+    <button class="sub subbtn" onclick="subscribe();">SUBSCRIBE</button>
+    <hr />
+
+    <p>Orders under $40 = + $10 Shipping</p>
+    <p>Orders over $40 = + $0 Shipping</p>
+    <input
+      placeholder="Enter Price Here"
+      class="cost-input coinput"
+      onkeydown="keyDElem(event);"
+    />
+    <button class="calc" onclick="costcalc();">Calculate</button>
+    <p class="finalPrice"></p>
+
+    <script src="rps.js"></script>
+    <script>
+      // script for sub button
+      function subscribe() {
+        const subButton = document.querySelector(".sub");
+        if (subButton.innerText === "SUBSCRIBE") {
+          subButton.innerHTML = "SUBSCRIBED";
+          subButton.classList.add("subbtned");
+        } else {
+          subButton.innerHTML = "SUBSCRIBE";
+          subButton.classList.remove("subbtned");
+        }
+      }
+      // end
+      // script for calculate
+      function costcalc() {
+        const inputElem = document.querySelector(".cost-input");
+        let price = Number(inputElem.value);
+        if (price < 40) {
+          price = price + 10;
+        }
+        document.querySelector(
+          ".finalPrice"
+        ).innerHTML = `Your total is $${price}`;
+      }
+      function keyDElem(event) {
+        if (event.key === "Enter") {
+          costcalc();
+        }
+      }
+      //end
+    </script>
+  </body>
+</html>

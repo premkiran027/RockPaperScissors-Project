@@ -1,0 +1,23 @@
+.subbtn{
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+    cursor: pointer;
+    
+}
+.subbtned{
+    background-color: green;
+    color: white;
+}
+.coinput{
+    padding: 10px;
+}
+.calc{
+    background-color: green;
+    color: white;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+}
