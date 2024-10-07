@@ -18,6 +18,34 @@ function compPick(){
     }
     return move;
 }
+let isPlaying = false;
+let intervalID;
+function autoplay(){
+    if(!isPlaying){
+        intervalID = setInterval(() => {
+            const autoplaygame = compPick();
+            playGame(autoplaygame);
+            isPlaying = true;
+            }, 2000);
+    }
+    else{
+        clearInterval(intervalID);
+        isPlaying = false;
+    }
+}
+document.querySelector('.rockBtn').addEventListener('click', ()=> {playGame('rock');});
+document.querySelector('.paperBtn').addEventListener('click', ()=> {playGame('paper');});
+document.querySelector('.scissorsBtn').addEventListener('click', ()=> {playGame('scissors');});
+document.body.addEventListener('keydown', (event)=>{
+    if(event.key === 'r'){
+        playGame('rock');
+    }else if(event.key === 'p'){
+        playGame('paper');
+    }else if(event.key === 's'){
+        playGame('scissors');
+    }
+})
+
 function playGame(playerMove){
     compMove = compPick();
     let result = '';

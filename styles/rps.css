@@ -18,11 +18,12 @@ body{
     font-size: 30px;
     font-weight: bolder;
 }
-.reset-btn{
+.reset-btn, .autoplayBtn{
     background-color: green;
     color: aliceblue;
     border: none;
     font-size: large;
     padding: 10px;
     margin: 5px 10px;
+    cursor: pointer;
 }

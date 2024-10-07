@@ -9,18 +9,19 @@
   <body>
     <a href="index.html" style="color: aquamarine">Next Page</a>
     <h2>Play Rock🗿Paper🧻Scissors✂️ with the Computer</h2>
-    <button class="move-button" onclick="playGame('rock');">
+    <button class="move-button rockBtn">
       <img class="move-icon" src="img/rock-emoji.png" alt="Rock🗿" />
     </button>
-    <button class="move-button" onclick="playGame('paper');">
+    <button class="move-button paperBtn">
       <img class="move-icon" src="img/paper-emoji.png" alt="Paper🧻" />
     </button>
-    <button class="move-button" onclick="playGame('scissors');">
+    <button class="move-button scissorsBtn">
       <img class="move-icon" src="img/scissors-emoji.png" alt="Scissors✂️" />
     </button>
     <p class="pyrresult pyresult"></p>
     <p class="pyrmove"></p>
     <p class="scrUp"></p>
+    <p>Press: 'r' = Rock || 'p' = Paper || 's' = Scissors</p>
 
     <button
       class="reset reset-btn"
@@ -28,7 +29,8 @@
     >
       Reset Game
     </button>
+    <button class="autoplayBtn" onclick="autoplay();">AutoPlay</button>
 
-    <script src="rps.js"></script>
+    <script src="js/rps.js"></script>
   </body>
 </html>
