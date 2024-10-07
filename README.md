@@ -1,2 +1,2 @@
-# RockPaperScissors-Project
-My first HTML, CSS, Javascript Project
+# WebDev Projects
+My first HTML, CSS, Javascript Projects
